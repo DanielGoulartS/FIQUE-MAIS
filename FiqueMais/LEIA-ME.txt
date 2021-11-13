@@ -1,0 +1,1 @@
+Para utilizar corretamente o algoritmo, forneça as credenciais para a conexão com a base de dados(MySQL) no arquivo index.php

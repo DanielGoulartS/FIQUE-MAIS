@@ -2,7 +2,7 @@
 //Cuidado alterar a ordem das Queries
 error_reporting(0);
 //Configure a conexão aqui:
-$host = 'localhost'; $user = 'newuser'; $pswrd = ''; $db = 'basedoce';
+$host = 'XXXXXX'; $user = 'XXXXX'; $pswrd = 'XXXXX'; $db = 'XXXXXX';
 $conn = mysqli_connect($host, $user, $pswrd, $db);
 if(mysqli_connect_error()){
     $conn = mysqli_connect($host,$user,$pswrd);
