@@ -13,8 +13,8 @@
             <div id='div2'>
                 <a id='lol'>PLAY</a>
                 <div id='divcent'><h1 id='body'>00:00:00:00</h1></div>
-                <input type='text' id='nickname' name='nickname' class='box' placeholder='NickName' maxlength='20'></input>
-                <input type='text' id='time' name='temp' class='box'></input>
+                <input type='text' id='nickname' class='box' name='nickname' placeholder='NickName' maxlength='20'></input>
+                <input type='text' id='time' class='box' name='temp'></input>
                 <button type='submit' id='enviarbt' class='box'>ENVIAR</button>
             </div>
         </form>
