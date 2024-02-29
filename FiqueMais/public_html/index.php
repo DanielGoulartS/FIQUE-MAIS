@@ -13,6 +13,7 @@ if (!$conn->IsConnected()) { //Servidores com restrição de criação de DB pod
     $conn->setDbConnection(mysqli_connect($conn->getHost(), $conn->getUsuario(), $conn->getSenha()));
     $conn->Query("create database " . $conn->getBase() . ";");
     $conn->Query("use " . $conn->getBase() . ";");
+    $conn->Query("create table visitas(id int, visitas int);");
     $conn->Query("create table ranq(nome varchar(20), tempo int);");
     $conn->Query("INSERT INTO `ranq` VALUES "
             . "('Caramelo',1852),"
