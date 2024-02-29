@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Fique Mais</title>
+        <link rel="icon" href="./Media/discoball.png">
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <?php require './../Classes/FiqueMaisCSS.php'; ?>
         <script src="./Scripts/cronjs.js"></script>
