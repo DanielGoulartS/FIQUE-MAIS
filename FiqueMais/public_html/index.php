@@ -23,6 +23,12 @@ if (!$conn->IsConnected()) { //Servidores com restrição de criação de DB pod
     $conn->setDbConnection(mysqli_connect($conn->getHost(), $conn->getUsuario(), $conn->getSenha(), $conn->getBase()));
 }
 
+//Contador de Acessos
+$queryVisitas = mysqli_fetch_array($conn->Query('select * from visitas where id = 1;'));
+$visitas = $queryVisitas['visitas'];
+$visitas ++;
+$queryUpdateVisitas = $conn->Query("update visitas set visitas = " . $visitas . " where id = 1;");
+
 //Seleciona o menor tempo para realizar a substituição quando/se necessário.
 $query1 = mysqli_fetch_array($conn->Query('select * from ranq where tempo = (select min(tempo) from ranq) limit 1;'));
 
