@@ -26,13 +26,13 @@ function timer(){
 
 }
 
+function start() {
+    lol.innerHTML = 'FIQUE MAIS';
+    lol.style.cursor = 'default';
+    aud.play();
+    setInterval(function () {
+        timer()
+    }, 10);
+}
+
 window.addEventListener('load', function(){lol.style.cursor = 'pointer'});
-window.addEventListener('click',
-    function start(){
-	    lol.innerHTML='FIQUE MAIS';
-	    lol.style.cursor = 'default';
-        aud.play();
-	    setInterval(function(){timer()},10);
-	    window.removeEventListener('click',start);
-} 
-);
