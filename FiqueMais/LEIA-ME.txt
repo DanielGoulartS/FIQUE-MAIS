@@ -1,1 +1,3 @@
 Para utilizar corretamente o algoritmo, forneça as credenciais para a conexão com a base de dados(MySQL) no arquivo index.php
+Para Funcionamento pleno da aplicação, a base de dados precisa estar iniciada, com a tabela 'ranq' criada e preenchida, como no script.
+Criar tabela visitas com visitas(id int, visitas int).
