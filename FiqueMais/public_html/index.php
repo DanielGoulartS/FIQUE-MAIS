@@ -4,7 +4,7 @@
 error_reporting(1);
 
 //Classe necessária
-require_once './../Classes/Connection.php';
+require_once './../Arquivos/Connection.php';
 
 //Configure a conexão nesta classe:
 $conn = new Connection();
@@ -60,5 +60,5 @@ if (filter_input(INPUT_POST, "temp") && filter_input(INPUT_POST, "nickname")) {
 
 //Montagem da tabela
 $tquery = $conn->Query("SELECT nome, lpad(tempo,8,'0') from ranq order by tempo desc;");
-require_once './../Classes/FiqueMais.php';
+require_once './../Arquivos/FiqueMais.php';
 $conn->CloseConnection();

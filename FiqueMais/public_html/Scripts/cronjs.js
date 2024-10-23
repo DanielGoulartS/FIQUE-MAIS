@@ -1,3 +1,4 @@
+const div2 = document.querySelector("#div2");
 let ml = 0;
 let seg = 0;
 let min = 0;
@@ -36,3 +37,5 @@ function start() {
 }
 
 window.addEventListener('load', function(){lol.style.cursor = 'pointer'});
+
+div2.addEventListener('click', start);

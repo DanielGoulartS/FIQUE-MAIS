@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.2.4.2 (Windows)"/>
+	<meta name="created" content="2024-10-14T18:28:35.813000000"/>
+	<meta name="changed" content="2024-10-23T20:49:43.267000000"/>
+	<style type="text/css">
+		@page { margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+	</style>
+</head>
+<body lang="pt-BR" dir="ltr"><p align="center" style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+Web Junk</p>
+<p align="center" style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<font size="7" style="font-size: 40pt">Fique Mais</font></p>
+<p align="center" style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+github.com/DanielGoulartS/</p>
+<p align="center" style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p align="center" style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<a href="https://github.com/DanielGoulartS/FIQUE-MAIS">https://github.com/DanielGoulartS/FIQUE-MAIS</a></p>
+<p align="center" style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p align="center" style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Tópicos:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+	Introdução</p>
+	<ul>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Objetivo Geral</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Motivação</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Tecnologias</p></li>
+	</ul>
+	<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+	Desenvolvimento</p>
+	<ul>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Sistema Proposto</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Arquitetura</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Para Nerds. (Sobre os arquivos)</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Requisitos Funcionais</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Reproduzir Música no Sistema Proposto</p></li>
+	</ul>
+	<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+	Diagramas</p>
+	<ul>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Casos de Uso</p></li>
+	</ul>
+</ul>
+<ul>
+	<ul>
+		<li value="1"><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Diagramas de Sequência</p></li>
+	</ul>
+</ul>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Objetivo Geral:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Criar uma página WEB de entretenimento que simule uma gincana que
+consiste em manter o usuário mais tempo possível na página
+enquanto ouve uma música repetitiva.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Motivação: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Doja Cat.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Tecnologias:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PHP, Javascript, HTML, CSS, Wamp Server, MySQL(PHPMyAdmin).</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O Sistema Proposto:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="FiqueMais_html_7adea16e.gif" name="Figura5" align="left" width="155" height="177">
+  <br clear="left"/>
+</img>
+<br clear="left"/>
+Trata-se
+de um sistema WEB que carrega uma música e prepara um ranque dos
+5(cinco) usuários que persistiram mais tempo na gincana.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Quando o usuário clica na área indicada a música é reproduzida
+infinitamente e uma contagem de tempo é iniciada e exibida para o
+usuário. O usuário tem acesso a um campo de texto para inserir seu
+apelido, que se já estiver contido no ranque da página será
+impedido de enviar pelo filtro do sistema, caso contrário ficará
+disponível para ser alocado no ranque se estiver entre os maiores
+tempos registrados.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Arquitetura:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O sistema trabalha no modelo Cliente-Servidor.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O usuário acessa o site através de sua máquina cliente, o site
+opera um banco de dados do servidor registrando tempos e usuários,
+apagando usuários com menos pontos, e enviando novamente estas
+informações a cada novo acesso à página.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<font color="#000000"><span style="background: #ff0000">[DIAGRAMA DE
+ARQUITETURA]</span></font></p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O Sistema Proposto trata-se de um Sistema WEB PHP que se utiliza da
+propriedade do “index.php” de ser interpretado como arquivo raiz
+pelos navegadores.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O sistema está organizado para aplicação direta em servidores,
+portanto possui a pasta public_html que contém os arquivos que serão
+acessíveis pelo público e interpretados pelos seus navegadores como
+a página index, os arquivos de mídia e os scripts, já outras
+pastas externas à public_html serão exclusivas do servidor e nunca
+acessadas diretamente.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+A pasta public_html contém:</p>
+<ul>
+	<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+	O arquivo index.php;</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+	A pasta Media com os arquivos de mídia (Imagens e Audio);</p></li>
+	<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+	A pasta Scripts com os scripts de Javascript que serão chamados
+	pelo HTML para a montagem do código da página que será entregue e
+	interpretada pelo cliente.</p></li>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<table width="100%" cellpadding="0" cellspacing="0" style="page-break-inside: avoid">
+	<col width="256*"/>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="background: transparent">
+			<span style="background: #b2b2b2">/*</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="background: transparent">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="background: transparent">
+			<span style="background: transparent">PARA NERDS:</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="background: transparent">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent; page-break-before: auto; page-break-after: auto">
+			<span style="background: transparent">O Index.PHP</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">O arquivo index.php contem
+			as consultas que serão executadas na base de dados, e também
+			amarra a lógica PHP à montagem da estrutura HTML e à conexão
+			da base de dados chamando os demais arquivos PHP que gerem estas
+			funções. Estes são:</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm">
+			<ul><li><p style="background: transparent"><span style="background: transparent">FiqueMais.php</span></p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm">
+			<ul><li><p style="background: transparent"><span style="background: transparent">Connection.php</span></p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="background: transparent">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm">
+			<ul><li><p style="background: transparent"><img src="FiqueMais_html_e2946605.gif" name="Figura2" align="left" width="170" height="185">
+  <br clear="left"/>
+</img>
+</p></li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">Connection.php</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">Este arquivo controla o
+			acesso a uma base de dados (apenas MySQL) uma vez que todos os
+			dados de conexão são variáveis que podem e devem ser alteradas
+			no início de qualquer publicação ou manipulação desta
+			aplicação visando seu pleno funcionamento.</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<img src="FiqueMais_html_fbe2029a.gif" name="Figura3" align="left" width="317" height="270">
+  <br clear="left"/>
+</img>
+<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">Dentro do construtor,
+			substituindo os valores de ‘host, usuario, senha e base’ pelos
+			valores da conexão ao seu servidor SQL você deve ter uma conexão
+			bem sucedida com sua base de dados, e quaisquer erros encontrados
+			não devem ser oriundos de conexão. </span>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">Possíveis erros acontecerão
+			se sua base de dados não estiver iniciada, ou não tiver a tabela
+			‘ranq’ criada e preenchida, neste caso execute o script
+			FiqueMais.sql em seu servidor MySQL.</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">O script FiqueMais.sql pode
+			ser encontrado na pasta do Sistema acompanhado do LEIA-ME.txt.</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">FiqueMais.php</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">Este arquivo tem a marcação
+			HTML e requer o arquivo FiqueMaisCSS.php que é responsável pelo
+			CSS e estilização da página, bem como uma estrutura de
+			repetição ao fim dá página que permite a exibição do ranque
+			de jogadores.</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">FiqueMaisCSS.php</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="text-indent: 0.4cm; background: transparent">
+			<span style="background: transparent">Este arquivo possui apenas a
+			chamada de estilização da página. Sua função é arcar
+			puramente com o CSS da aplicação, mas utiliza-se das
+			propriedades do PHP para retornar resultados dinâmicos de paletas
+			de cores para os usuários a cada requisição.</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td width="100%" valign="top" bgcolor="#b2b2b2" style="background: #b2b2b2; border: 1px solid #b2b2b2; padding: 0cm"><p style="background: transparent">
+			<span style="background: transparent">*/</span></p>
+		</td>
+	</tr>
+</table>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Requisitos Funcionais:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+RF (Requisito Funcional):001</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+REQUISITO: Reproduzir Música.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema deverá reproduzir uma música quando for
+acionado pelo usuário.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRIORIDADE: Alta.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 001</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Requisitos Funcionais:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+RF (Requisito Funcional):002</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+REQUISITO: Contar Tempo.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema deverá reproduzir um cronômetro junto à
+música.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRIORIDADE: Alta.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 002</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+RF (Requisito Funcional):003</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+REQUISITO: Registrar Usuário.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema deverá registrar o usuário que preencher o
+formulário e passar mais tempo na gincana do que, pelo menos, o
+menor tempo registrado bem como excluir todo e qualquer tempo menor
+que o 5º (quinto) maior registrado.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRIORIDADE: Alta.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 003</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+RF (Requisito Funcional):004</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+REQUISITO: Exibir os registros dos melhores pontuadores.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema exibirá de forma espontânea uma tabela
+ranqueando os melhores pontuadores que enviaram seus registros pelo
+formulário.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRIORIDADE: Alta.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 004</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+RF (Requisito Funcional):005</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+REQUISITO: Vetar o registro de usuários com apelidos repetidos.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema impedirá o registro de jogadores com nomes
+iguais.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRIORIDADE: Alta.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 005</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+RF (Requisito Funcional):006</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+REQUISITO: Contar de acessos.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema contabilizará em banco de dados toda vez que
+um acesso acontecer.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRIORIDADE: Baixa.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 006</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Reproduzir Música no Sistema Proposto:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O arquivo de áudio está alocado numa pasta “Media” onde fica
+com outros arquivos de mídia como uma imagem e o ícone do Site. O
+arquivo será carregado e exibido no Site através de uma tag HTML
+&lt;audio&gt;. O player no entanto, será oculto e acionado apenas
+pelo arquivo cronjs.js.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="FiqueMais_html_74d92de.gif" name="Figura1" align="left" width="609" height="42">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Contar Tempo no Sistema Proposto:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+A contagem de tempo se dará através da interação de 2 funções
+Javascript contidas no script cronjs.js. A exibição será feita na
+área principal do site junto ao formulário de registro, garantindo
+que o usuário não perca nenhum elemento de vista.</p>
+<p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<img src="FiqueMais_html_b75d627a.gif" name="Figura11" align="left" width="687" height="293">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Registrar usuário no Sistema Proposto:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O registro de usuários se dará pelo arquivo index que fará as
+queries de update ao banco de dados sempre que receber dados pelo
+método POST do navegador.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Exibir os registros no Sistema Proposto:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Os 5 melhores tempo serão exibidos com os apelidos (nicknames) dos
+usuários que os enviarem através do formulário.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Para que o registro seja salvo ele deve seguir as seguintes
+exigências:</p>
+<ul>
+	<ul>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent; background: transparent; page-break-before: auto">
+		Ser diferente dos já registrados;</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent; background: transparent">
+		Não ser nulo ou feito de espaços em branco;</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent; background: transparent">
+		Se for igual a um já registrado, deve possuir pontuação (tempo)
+		maior que a versão anterior de si mesmo.</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent; background: transparent">
+		Ter tempo maior que ao menos o menor registrado até então.</p></li>
+	</ul>
+</ul>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Vetar o registro de usuários com apelidos repetidos no Sistema
+Proposto:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Os usuários que desejarem enviar suas pontuações podem fazê-lo
+escrevendo seu apelido (nickname) e pressionando em seguida o botão
+“Enviar” do mesmo formulário, se portanto o apelido do usuário
+apresentar qualquer problema será então filtrado. 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+A coloração do texto pode mudar para sinalizar a disponibilidade do
+apelido digitado, onde:</p>
+<ul>
+	<ul>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Amarelo Significa Indisponível</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Verde Significa Disponível</p></li>
+		<li><p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+		Vermelho Significa Problema no Sistema.</p></li>
+	</ul>
+</ul>
+<p style="line-height: 100%; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="FiqueMais_html_85f3a81c.gif" name="Figura12" align="left" width="583" height="263">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Contar de acessos no Sistema Proposto:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+O Fique Mais conta um acesso espontâneamente toda vez que um usuário
+acessa a página.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Casos de Uso:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case):001</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Reproduzir Música</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema deverá reproduzir uma música quando for
+acionado pelo usuário.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+ATORES: Usuário</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRE-CONDIÇÕES:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+FLUXO DE EVENTOS: O usuário na página clica na interface; A música
+é ligada com a contagem de tempo.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PÓS CONDIÇÕES: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+EXTENSÃO: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+INCLUSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+OBS:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="Untitled-Page-1.png" name="Figura4" align="left" width="359" height="172">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Casos de Uso:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case):002</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Contar Tempo.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema deverá reproduzir um cronômetro junto à
+música.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+ATORES: Usuário</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRE-CONDIÇÕES:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+FLUXO DE EVENTOS: O usuário na página clica na interface; A
+contagem de tempo é ligada junto a música.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PÓS CONDIÇÕES: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+EXTENSÃO: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+INCLUSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+OBS:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="Untitled-Page-2.png" name="Figura4 Copia 1" align="left" width="359" height="172">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 003</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Registrar Usuário</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema deverá registrar o usuário que preencher o
+formulário e passar mais tempo na gincana do que, pelo menos, o
+menor tempo registrado bem como excluir todo e qualquer tempo menor
+que o 5º (quinto) maior registrado.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+ATORES: Usuário</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRE-CONDIÇÕES: O usuário deve estar com a música correndo e uma
+pontuação maior que a menor já registrada.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+FLUXO DE EVENTOS: O usuário preenche o formulário de Nickname
+(apelido); O usuário clica no botão enviar.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PÓS CONDIÇÕES: O placar terá os 5 nomes com maiores tempos
+registrados.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+EXTENSÃO: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+INCLUSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+OBS: O sistema manterá apenas os 5 maiores registros, portanto se o
+tempo de jogo não for grande o suficiente para superar ao menos um
+dos cinco já registrados ou ele não será registrado, no entanto se
+for o resultado anteriormente mais baixo agora será esquecido.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="Untitled-Page-3.png" name="Figura6" align="left" width="356" height="172">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 004</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Exibir os registros dos melhores pontuadores registrados.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema exibirá de forma espontânea uma tabela
+ranqueando os melhores pontuadores que enviaram seus registros pelo
+formulário.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+ATORES:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRE-CONDIÇÕES:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+FLUXO DE EVENTOS: O usuário acessa a página.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PÓS CONDIÇÕES: O usuário vê a tabela contendo os jogadores mais
+persistentes.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+EXTENSÃO: UC002 – Registrar Usuário.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+INCLUSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+OBS:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="Untitled-Page-4.png" name="Figura7" align="left" width="356" height="247">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 005</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Vetar o registro de usuários com apelidos repetidos.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema impedirá o envio do formulário com apelidos
+já contidos no ranque.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+ATORES: Usuário</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRE-CONDIÇÕES: O usuário insere um apelido já exibido na tabela
+ao fim da página.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+FLUXO DE EVENTOS: O usuário insere o apelido já exibido na tabela
+ao fim da página; O botão “enviar” é bloqueado.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PÓS CONDIÇÕES: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+EXTENSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+INCLUSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+OBS:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="Untitled-Page-5.png" name="Figura8" align="left" width="401" height="242">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case): 006</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Contar de acessos.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DESCRIÇÃO: O Sistema contabilizará em banco de dados toda vez que
+um acesso acontecer.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+ATORES: Usuário</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PRE-CONDIÇÕES:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+FLUXO DE EVENTOS: O usuário acessa a página.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+PÓS CONDIÇÕES: O contador de acessos conta mais um acesso.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+EXTENSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+INCLUSÃO:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+OBS:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA: 
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<img src="Untitled-Page-6.png" name="Figura9" align="left" width="352" height="186">
+  <br clear="left"/>
+</img>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Diagramas de Sequência:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent; page-break-before: auto; page-break-after: auto">
+UC (Use Case):001</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Reproduzir Música</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA:</p>
+<p><img src="Untitled-Page-7.png" name="Figura10" align="left" width="415" height="220">
+  <br clear="left"/>
+</img>
+<br/>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+Diagramas de Sequência:</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent; page-break-before: auto; page-break-after: auto">
+UC (Use Case):002</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Contar Tempo.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA:</p>
+<p><img src="Untitled-Page-8.png" name="Figura10 Copia 2" align="left" width="415" height="220">
+  <br clear="left"/>
+</img>
+<br/>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent; page-break-before: auto; page-break-after: auto">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case):003</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Registrar Usuário</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA:</p>
+<p><img src="Untitled-Page-9.png" name="Figura10 Copia 1" align="left" width="679" height="220">
+  <br clear="left"/>
+</img>
+<br/>
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case):004</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Exibir os registros dos melhores pontuadores registrados.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA:</p>
+<img src="Untitled-Page-10.png" name="Figura10 Copia 1 Copia 1" align="left" width="415" height="220">
+  <br clear="left"/>
+</img>
+
+<p style="line-height: 100%; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+-------------------</p>
+<p style="line-height: 100%; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case):005</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Vetar o registro de usuários com apelidos repetidos.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA:</p>
+<img src="Untitled-Page-11.png" name="Figura10 Copia 1 Copia 2" align="left" width="330" height="220">
+  <br clear="left"/>
+</img>
+
+<p style="line-height: 100%; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+-------------------</p>
+<p style="line-height: 100%; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+UC (Use Case):006</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+TÍTULO: Contar Acessos.</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-bottom: 0cm; background: transparent">
+DIAGRAMA:</p>
+<img src="Untitled-Page-12.png" name="Figura10 Copia 1 Copia 3" align="left" width="408" height="220">
+  <br clear="left"/>
+</img>
+
+<p style="line-height: 100%; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent; background: transparent; page-break-before: auto">
+<br/>
+-------------------</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+<p style="line-height: 100%; text-indent: 0.4cm; margin-left: 0.4cm; margin-bottom: 0cm; background: transparent">
+<br/>
+
+</p>
+</body>
+</html>
